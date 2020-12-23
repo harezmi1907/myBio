@@ -5,40 +5,138 @@
 <head>
 
   <meta charset="UTF-8">
-  <title>1.2.9 Exercise</title>
+  <title>My Bio</title>
 
-  <!-- This critical line points your HTML to the CSS file. Notice the "relative" pathway  -->
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Reset CSS -->
+  <link rel="stylesheet" href="./assets/reset.css">
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="./assets/style.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&family=Raleway&family=Roboto:wght@300&display=swap"
+    rel="stylesheet">
+  <!-- Social Media Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+  <!-- Viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 
 <body>
-  <header>
-    <h1>Student Bio</h1>
-  </header>
-
-  <div class="container">
-
-    <section id="main-bio">
-
-      <h2>Your Name</h2>
-      <img src="http://placehold.it/200x200" alt="Your Image" id="bio-image">
-      <p>Write a short paragraph or two about yourself, or use placeholder text from <a href="http://www.lipsum.com/">www.lipsum.com</a></p>
-
-    </section>
-
-    <section id="contact-info">
-
-      <h2>Contact Info</h2>
-
-      <ul>
-        <li><strong>Email:</strong> <a href="#">someplace@gmail.com</a></li>
-        <li><strong>Github:</strong> <a href="#">sampleName</a></li>
-        <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <span class="navbar-brand mb-1 h1">RayKaplan</span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">About me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
       </ul>
+    </div>
+  </nav>
 
-    </section>
+  <!-- Main container about me image and paragraphs  -->
+  <div class="container d-flex justify-content-center">
+    <!-- Jumbotron element -->
+    <div class="jumbotron">
+      <section class="main-section">
 
+        <div class="row">
+          <div class="col-md-12">
+            <h4>About Me</h4>
+          </div>
+        </div>
+
+        <!-- image and paragrapgh row -->
+        <div class="row">
+          <div class="col-md-12 image-wrapper">
+            <!-- image -->
+            <img src="Cool McCool.jpg" class="card-img-top float-left" style="width: 150px; padding:15px;"
+              alt="about_me_image">
+            <!-- paragrapgh -->
+            <p>
+              Hi! I am Ray. I have an electronics engineering degree and after some life adventures, I ended up being a
+              Sofware Engineer and enjoying it very much. I am currently working in a well-known educational
+              organization and trying hard to provide a good web experience to our customers.
+            </p>
+            <p>
+              My technical skills are mostly tied to the applications I worked on and I also worked on side projects to
+              explore new tools.
+            </p>
+            <p>
+              I used Java and JavaScript extensively. I worked on AWS environment in an effort to move our legacy
+              applications into cloud. I developed several microservices with node.js and used most of the AWS
+              components.
+            </p>
+            <p>
+              Maintaining our legacy Java applications designed with Spring and Struts frameworks was on me and I made
+              major
+              changes in these applications to keep them up and running when the local dependencies were moved to cloud
+              one-by-one.
+            </p>
+            <p>
+              Automation testing is my strongest suite and I created my own frameworks one with
+              Java/Selenium/JUnit/Cucumber and another with JavaScript/WebDriverIO/Selenium/Chai/Cucumber framework
+              which both were actively used for different applications.
+            </p>
+            <p>
+              I am currently improving my web technology skills and studying html/css/bootstrap/ajax/jquery.
+            </p>
+            <div class="row">
+              <div class="col-md-12">
+                "I do not make assumptions, I ask." -Ron LaPorte
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--End image and paragrapgh row -->
+
+      </section>
+    </div>
   </div>
+
+  <!-- Begin Footer -->
+  <footer class="footer font-small fixed-bottom bg-dark">
+    <div class="container footer-copyright text-center py-3">
+      <div class="row">
+
+        <!-- Social Media Icons -->
+        <div class="col-md-6">
+          <!-- Github -->
+          Connect
+          <a href="https://github.com/harezmi1907/" target="_blank">
+            <button type="button" class="btn btn-social-icon btn-github btn-rounded">
+              <i class="fa fa-github"></i>
+            </button>
+          </a>
+          <!-- Linkedin -->
+          <a href="#" target="_blank">
+            <button type="button" class="btn btn-social-icon btn-linkedin btn-rounded">
+              <i class="fa fa-linkedin"></i>
+            </button>
+          </a>
+        </div>
+        <!-- End Social -->
+
+        <!-- Copyright -->
+        <div class="col-md-6">
+          ©2020 Copyright:RayKaplan
+        </div>
+        <!-- End Copyright -->
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
 
 </body>
 
